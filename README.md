@@ -57,3 +57,7 @@ You can then use the scripts therein to reproduce our technical validation secti
 ### Data topoplogy
 - `Data_topology.ipynb` this script will extract and store the data necessary for Fig 5
 - `Lobster_dataoverview.pkl` contains presaved data ready to be used for generating Fig 5.
+
+### Read data records
+- `Read_lobsterpy_data.ipynb` This script will read lobsterpy summarized bonding information json files as python dictionary(refer Table 1 of the manuscript for the description). 
+- `Read_lobsterschema_data.ipynb` This script will read LobsterSchema data as pymatgen objects and consists of all the relevant LOBSTER computation data in the form of python dictionary (refer Table 2 of the manuscript for the description).
