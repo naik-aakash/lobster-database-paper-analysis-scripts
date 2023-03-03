@@ -38,8 +38,8 @@ You can then use the scripts therein to reproduce our technical validation secti
 - `Save_pdos_plot_and_data.ipynb` will save the PDOS comparison plots.
 - ##### Interactive visualization of PDOS benchmark plots 
   1. Navigate to `/hpc-user/AG-JGeorge/anaik/Phonon_dataset_LSO/LSODOS_plots/` 
-  2. `Band_features.py` run this script to get dash app to explore all the s,p,d band feature plots
-  3. `Check_fingerprints.py` run this script to get dash app to visualize all the s,p,d fingerprint plots
+  2. `Band_features.py` run this script to get dash app to explore all the s,p,d band feature plots (Checkout -h options)
+  3. `Check_fingerprints.py` run this script to get dash app to visualize all the s,p,d fingerprint plots (Checkout -h options)
 
 ### Charge and coordination comp
 - `BVA_Charge_comparisons.ipynb` will produce the results of charge comparison analysis and also corresponding plots (as shown in SI, Fig S4,S5)
