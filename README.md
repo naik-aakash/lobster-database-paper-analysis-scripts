@@ -32,7 +32,7 @@ You can then use the scripts therein to reproduce our technical validation secti
 - `Charge_spilling_lobster.ipynb` will produce the dataframe with charge spillings for entire dataset and also create the histograms (as in the manuscript). 
 - `Charge_spilling_data.pkl` consists of presaved data from `Charge_spilling_lobster.ipynb` script run (Load this to get plots on the go) 
 
-### DOS comp
+### DOS comparisons
 - `Get_plots_band_features_tanimoto.ipynb` will produce all the PDOS benchmarking data, save pandas dataframes as pickle and also save the all the plots
 - `lsolobdos.pkl` and `lobdos.pkl` consists of all the data necessary to reproduce the plots (as shown in Fig 4, SI Fig S1, S2, S3) 
 - `Save_pdos_plot_and_data.ipynb` will save the PDOS comparison plots.
