@@ -1,25 +1,25 @@
-This repository consists of analysis scripts to reproduce the publication on Lobster database 
+This repository consists of analysis scripts to reproduce the publication on LOBSTER database 
 
 ## Workflow initialization
 
 The following version numbers are used for the workflows:
 - [pymatgen 2022.11.7](https://pypi.org/project/pymatgen/2022.11.7/)
 - [atomate 1.0.3](https://github.com/hackingmaterials/atomate)
-- [custodian](https://github.com/materialsproject/custodian) (pip install https://github.com/materialsproject/custodian)
+- [custodian](https://github.com/materialsproject/custodian)  `pip install https://github.com/materialsproject/custodian`
 
-`Workflow.ipynb` includes script to start all Lobster computations with
+`Workflow.ipynb` includes script to start all LOBSTER computations with
 pymatgen, fireworks, and atomate.
 
 ## Analyzing the results & data generation
 - [LobsterPy 0.2.5](https://github.com/JaGeo/LobsterPy)
-- [atomate2](https://github.com/JaGeo/atomate2/tree/lobster_clean) (pip install git+https://github.com/JaGeo/atomate2.git@lobster_clean)
+- [atomate2](https://github.com/JaGeo/atomate2/tree/lobster_clean) `pip install git+https://github.com/JaGeo/atomate2.git@lobster_clean`
 - dash 2.8.1
 - seaborn 0.12.2
 - plotly 5.10.0
 
 ### Data generation
-- `Lobsterpy_jsons.ipynb` This script will run lobsterpy and store the results as jsons (refer Table 1 of the manuscript for the description). 
-- `Lobsterschema_jsons.ipynb` This script stores all the relevant LOBSTER computation files in the form of JSON using pydantic schema as implemented for atomate2 (refer Table 2 of the manuscript for the description).
+- The `Lobsterpy_jsons.ipynb` script will run LobsterPy and store the results as JSON files (refer Table 1 of the manuscript for the description). 
+- The `Lobsterschema_jsons.ipynb` script stores all the relevant LOBSTER computation files in the form of JSON using pydantic schema as implemented for atomate2 (refer Table 2 of the manuscript for the description).
 
 ### Technical validation
 You need to download the data from www.xxx.com first.
@@ -30,7 +30,7 @@ You can then use the scripts therein to reproduce our technical validation secti
 ### Charge spilling
 
 - `Charge_spilling_lobster.ipynb` will produce the dataframe with charge spillings for entire dataset and also create the histograms (as in the manuscript). 
-- `Charge_spilling_data.pkl` consists of presaved data from `Charge_spilling_lobster.ipynb` script run (Load this to get plots on the go) 
+- `Charge_spilling_data.pkl` consists of presaved data from `Charge_spilling_lobster.ipynb` script run (load this to get plots on the go).
 
 ### DOS comparisons
 - `Get_plots_band_features_tanimoto.ipynb` will produce all the PDOS benchmarking data, save pandas dataframes as pickle and also save the all the plots
@@ -38,28 +38,28 @@ You can then use the scripts therein to reproduce our technical validation secti
 - `Save_pdos_plot_and_data.ipynb` will save the PDOS comparison plots.
 - ##### Interactive visualization of PDOS benchmark plots 
   1. Navigate to `/hpc-user/AG-JGeorge/anaik/Phonon_dataset_LSO/LSODOS_plots/` 
-  2. `Band_features.py` run this script to get dash app to explore all the s,p,d band feature plots (Checkout -h options)
-  3. `Check_fingerprints.py` run this script to get dash app to visualize all the s,p,d fingerprint plots (Checkout -h options)
+  2. Run the `Band_features.py` script to get dash app to explore all the s, p, d band feature plots (Checkout -h options)
+  3. Run the `Check_fingerprints.py` script to get dash app to visualize all the s, p, d fingerprint plots (Checkout -h options)
 
 ### Charge and coordination comp
 - `BVA_Charge_comparisons.ipynb` will produce the results of charge comparison analysis and also corresponding plots (as shown in SI, Fig S4,S5)
 - `Charge_comp_data.pkl` contains saved to charge comparison 
 - `Coordination_comparisons_BVA.ipynb` will produce the results of coordination environments comparisons 
-- `Cooridination_comp_data_bva.pkl` contains saved to coordination environments comparisons
+- `Coordination_comp_data_bva.pkl` contains saved to coordination environments comparisons
 - ##### Bader comparisons scripts (optional)
-  - `Retreive_bader_charges_aflowlib.ipynb` will get bader charge data from AFLOW database by using structure matcher from pymatgen
-  - `bader_charges.pkl` consists of retrieved bader charge data (Load this to directly start with comparisons) 
-  - `Bader_Charge_comparisons.ipynb` will compare bader charges with Mulliken and Loewdin (cation-anion classification only)
-  - `Charge_comp_data_bader.pkl` results of bader charge comparison data
-  - `Coordination_comparisons_bader.ipynb` will compare coordination environments from simplest Chemenv strategy using bader charges as valences to Lobster environments based on ICOHP
-  - `Cooridination_comp_data_bader.pkl` contains results of coordination environment comparisons using bader charges as valences
+  - `Retreive_bader_charges_aflowlib.ipynb` will get Bader charge data from AFLOW database by using structure matcher from pymatgen
+  - `bader_charges.pkl` consists of retrieved Bader charge data (load this to directly start with comparisons) 
+  - `Bader_Charge_comparisons.ipynb` will compare Bader charges with Mulliken and Löwdin charges (cation-anion classification only)
+  - `Charge_comp_data_bader.pkl` results of Bader charge comparison data
+  - `Coordination_comparisons_bader.ipynb` will compare coordination environments from simplest Chemenv strategy using Bader charges as valences to LOBSTER environments based on ICOHP
+  - `Coordination_comp_data_bader.pkl` contains results of coordination environment comparisons using Bader charges as valences
 
 ### Data topoplogy
-- `Data_topology.ipynb` this script will extract and store the data necessary for Fig 5
+- `Data_topology.ipynb` this script will extract and store the data necessary for Fig 5.
 - `Lobster_dataoverview.pkl` contains presaved data ready to be used for generating Fig 5.
 
 ### Read data records
-- `/hpc-user/AG-JGeorge/anaik/Phonon_dataset_LSO/Lobsterpy_json/` - path to summarized bonding data files
-- `/hpc-user/AG-JGeorge/anaik/Phonon_dataset_LSO/Json_data/` - path to LobsterSchema data files
-- `Read_lobsterpy_data.ipynb` This script will read lobsterpy summarized bonding information json files as python dictionary(refer Table 1 of the manuscript for the description). 
+- `/hpc-user/AG-JGeorge/anaik/Phonon_dataset_LSO/Lobsterpy_json/` -- path to summarized bonding data files
+- `/hpc-user/AG-JGeorge/anaik/Phonon_dataset_LSO/Json_data/` -- path to LobsterSchema data files
+- `Read_lobsterpy_data.ipynb` This script will read LobsterPy summarized bonding information JSON files as python dictionary (refer Table 1 of the manuscript for the description). 
 - `Read_lobsterschema_data.ipynb` This script will read LobsterSchema data as pymatgen objects and consists of all the relevant LOBSTER computation data in the form of python dictionary (refer Table 2 of the manuscript for the description).
