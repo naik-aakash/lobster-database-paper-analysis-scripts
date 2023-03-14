@@ -66,7 +66,6 @@ You can then use the scripts therein to reproduce our technical validation secti
 - `Read_lobsterschema_data.ipynb` This script will read LobsterSchema data as pymatgen objects and consists of all the relevant LOBSTER computation data in the form of python dictionary (refer Table 2 of the manuscript for the description).
 
 
-[comment]: <> (Could you add x,y values etc for the plots in txt files?)
 [comment]: <> (Could you analyse some outliers for the coordination environment? Currently, it's not easy to see this. I would like to verify that the code is actually working)
 [comment]: <> (Could you add requirement files to each of the folders?)
 [comment]: <> (We need to add more comments to the notebooks on where to start with the analysis)
@@ -75,3 +74,4 @@ You can then use the scripts therein to reproduce our technical validation secti
 [comment]: <> (add one sample json if possible)
 [comment]: <> (add spin-polarization to lobsterpy plots, do all-bonds and cation-anion analysis for all compounds)
 [comment]: <> (lobsterpy plot data should be a CompleteCohp object)
+[comment]: <> (Could you add a plot of the Lobster density of states for one compound in the sample repo? I would do the same for COHP as well.)
