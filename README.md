@@ -63,3 +63,9 @@ You can then use the scripts therein to reproduce our technical validation secti
 - `/hpc-user/AG-JGeorge/anaik/Phonon_dataset_LSO/Json_data/` -- path to LobsterSchema data files
 - `Read_lobsterpy_data.ipynb` This script will read LobsterPy summarized bonding information JSON files as python dictionary (refer Table 1 of the manuscript for the description). 
 - `Read_lobsterschema_data.ipynb` This script will read LobsterSchema data as pymatgen objects and consists of all the relevant LOBSTER computation data in the form of python dictionary (refer Table 2 of the manuscript for the description).
+
+### ML model
+- `Featurize_lobsterpy_jsons.ipynb` This script generates summary stats data from lobsterpy json files and save it as `Small_basis_summary_stat.csv` (Still needs to be updated)
+- `matbench_data_with_mpid.pkl` This file contains target property for predictions (last phdos peak) with structure and corresponding materials project id (material ids are added using structure matcher)
+- `Modnet_featurizer.ipynb` This script uses modnet featurizer to extract matminer features based on composition and structure and creates data ready to be used for ML model training - `dataforml.pkl`
+- `All_models.ipynb` This script will train and evaluate 6 different regression models using nested CV approach.
