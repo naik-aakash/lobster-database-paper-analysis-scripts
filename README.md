@@ -4,18 +4,18 @@ This repository consists of analysis scripts to reproduce the publication on LOB
 
 The following version numbers are used for the workflows:
 - [pymatgen 2022.11.7](https://pypi.org/project/pymatgen/2022.11.7/)
-- [atomate 1.0.3](https://github.com/hackingmaterials/atomate)
-- [custodian](https://github.com/materialsproject/custodian)  `pip install https://github.com/materialsproject/custodian`
+- [atomate 1.0.3](https://pypi.org/project/atomate/1.0.3/)
+- [custodian 2023.3.10](https://pypi.org/project/custodian/2023.3.10/)
 
 `Workflow.ipynb` includes script to start all LOBSTER computations with
 pymatgen, fireworks, and atomate.
 
 ## Analyzing the results & data generation
 - [LobsterPy 0.2.5](https://github.com/JaGeo/LobsterPy)
-- [atomate2](https://github.com/JaGeo/atomate2/tree/lobster_clean) `pip install git+https://github.com/JaGeo/atomate2.git@lobster_clean`
-- dash 2.8.1
-- seaborn 0.12.2
-- plotly 5.10.0
+- [atomate2 0.0.10](https://pypi.org/project/atomate2/0.0.10/)
+- [dash 2.8.1](https://pypi.org/project/dash/2.8.1/)
+- [seaborn 0.12.2](https://pypi.org/project/seaborn/0.12.2/)
+- [plotly 5.10.0](https://pypi.org/project/plotly/5.10.0/)
 
 ### Data generation
 - The `Lobsterpy_jsons.ipynb` script will run LobsterPy and store the results as JSON files (refer Table 1 of the manuscript for the description). 
