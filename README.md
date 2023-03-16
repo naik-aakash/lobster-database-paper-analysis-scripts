@@ -66,7 +66,6 @@ You can then use the scripts therein to reproduce our technical validation secti
 
 ### ML model
 - `Featurize_lobsterpy_jsons.ipynb` This script generates summary stats data from lobsterpy json files and save it as `Small_basis_summary_stat.csv` (Still needs to be updated)
-- `matbench_data_with_mpid.pkl` This file contains target property for predictions (last phdos peak) with structure and corresponding materials project id (material ids are added using structure matcher)
 - `Data_for_ml.ipynb` This script uses modnet featurizer to extract matminer features based on composition and structure and creates data ready to be used for ML model training (also adds lobterpy summarized data as features) - `dataforml.pkl`
 - `ML_data_with_automatminer.ipynb` This script uses automatminer featurizer to extract matminer features based on composition and structure and creates data ready to be used for ML model training (also adds lobterpy summarized data as features)- `dataforml_automatminer.pkl`
 - `Models_phonon_v1.ipynb` This script will train and evaluate 5 different regression models using nested CV approach.
