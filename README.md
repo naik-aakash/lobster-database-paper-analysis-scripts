@@ -66,8 +66,11 @@ You can then use the scripts therein to reproduce our technical validation secti
 
 ### ML model
 - `Featurize_lobsterpy_jsons.ipynb` This script generates summary stats data from lobsterpy json files and save it as `Small_basis_summary_stat.csv` (Still needs to be updated)
-- `Data_for_ml.ipynb` This script uses modnet featurizer to extract matminer features based on composition and structure and creates data ready to be used for ML model training (also adds lobterpy summarized data as features) - `dataforml.pkl`
 - `ML_data_with_automatminer.ipynb` This script uses automatminer featurizer to extract matminer features based on composition and structure and creates data ready to be used for ML model training (also adds lobterpy summarized data as features)- `dataforml_automatminer.pkl`
-- `Models_phonon_v1.ipynb` This script will train and evaluate 5 different regression models using nested CV approach.
+- `RF_model.ipynb` This script will train and evaluate 2 random forest regressor models using nested CV approach. (Including and exclusing LOBSTER features)
 - `Automatminer_rf_ml_model.ipynb`This script will train and evaluate random forest regression models using automatminer Matpipe (Used to compare matbench RF model).
-- `model_score_stats.csv` This file containts summarized stats of models trained and evaluated using `Models_phonon_v1.ipynb` script.
+- `exc_icohp` This directory containts model cross validation evaluation result plot and feature importance plots
+- `exc_icohp/summary_stats.csv` This file containts summarized stats of model trained and evaluated using `RF_model.ipynb` script. (Excluding LOBSTER features)
+- `inc_icohp` This directory containts model cross validation evaluation result plot and feature importance plots
+- `inc_icohp/summary_stats.csv` This file containts summarized stats of model trained and evaluated using `RF_model.ipynb` script. (Including LOBSTER features)
+
