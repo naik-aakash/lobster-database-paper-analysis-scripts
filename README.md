@@ -54,7 +54,7 @@ You can then use the scripts therein to reproduce our technical validation secti
   - `Coordination_comparisons_bader.ipynb` will compare coordination environments from simplest Chemenv strategy using Bader charges as valences to LOBSTER environments based on ICOHP
   - `Coordination_comp_data_bader.pkl` contains results of coordination environment comparisons using Bader charges as valences
 
-### Data topoplogy
+### Data overview
 - `Data_topology.ipynb` this script will extract and store the data necessary for Fig 5.
 - `Lobster_dataoverview.pkl` contains presaved data ready to be used for generating Fig 5.
 
@@ -65,6 +65,7 @@ You can then use the scripts therein to reproduce our technical validation secti
 - `Read_lobsterschema_data.ipynb` This script will read LobsterSchema data as pymatgen objects and consists of all the relevant LOBSTER computation data in the form of python dictionary (refer Table 2 of the manuscript for the description).
 
 ### ML model
+- `mpids.csv` File contains list of material project ids and corresponding compositions 
 - `Featurize_lobsterpy_jsons.ipynb` This script generates summary stats data from lobsterpy json files and save it as `Small_basis_summary_stat.csv` (Still needs to be updated)
 - `ML_data_with_automatminer.ipynb` This script uses automatminer featurizer to extract matminer features based on composition and structure and creates data ready to be used for ML model training (also adds lobterpy summarized data as features)- `dataforml_automatminer.pkl`
 - `RF_model.ipynb` This script will train and evaluate 2 random forest regressor models using nested CV approach. (Including and exclusing LOBSTER features)
