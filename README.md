@@ -18,8 +18,12 @@ pymatgen, fireworks, and atomate.
 - [plotly 5.10.0](https://pypi.org/project/plotly/5.10.0/)
 
 ### Data generation
-- The `Lobsterpy_jsons.ipynb` script will run LobsterPy and store the results as JSON files (refer Table 1 of the manuscript for the description). 
-- The `Lobsterschema_jsons.ipynb` script stores all the relevant LOBSTER computation files in the form of JSON using pydantic schema as implemented for atomate2 (refer Table 2 of the manuscript for the description).
+- The `Lobster_lightweight_json_generation.ipynb` script will generate light weight lobster jsons that consists of lobsterpy summarzied bonding information, relevant strongest bonds, madelung energies of the structures and atomic charges (refer Table 1 and 2 of the manuscript for the description). 
+- The `Computational_data_generation.ipynb` script stores all the relevant LOBSTER computation files in the form of JSON using pydantic schema as implemented for atomate2 (refer Table 3 of the manuscript for the description).
+
+### Example data
+- The `Lightweight_jsons` Directory contains two sample files generated using `Lobster_lightweight_json_generation.ipynb`.
+- The `Computational_data_jsons` Directory contains two sample files generated using `Computational_data_generation.ipynb`.
 
 ### Technical validation
 You need to download the data from www.xxx.com first.
@@ -57,14 +61,17 @@ You can then use the scripts therein to reproduce our technical validation secti
 - `Read_lobsterpy_data.ipynb` This script will read LobsterPy summarized bonding information JSON files as python dictionary (refer Table 1 of the manuscript for the description). 
 - `Read_lobsterschema_data.ipynb` This script will read LobsterSchema data as pymatgen objects and consists of all the relevant LOBSTER computation data in the form of python dictionary (refer Table 2 of the manuscript for the description).
 
-### ML model
-- `mpids.csv` File contains list of material project ids and corresponding compositions 
-- `Featurize_lobsterpy_jsons.ipynb` This script generates summary stats data from lobsterpy json files and save it as `Small_basis_summary_stat.csv` (Still needs to be updated)
-- `ML_data_with_automatminer.ipynb` This script uses automatminer featurizer to extract matminer features based on composition and structure and creates data ready to be used for ML model training (also adds lobterpy summarized data as features)- `dataforml_automatminer.pkl`
-- `RF_model.ipynb` This script will train and evaluate 2 random forest regressor models using nested CV approach. (Including and exclusing LOBSTER features)
-- `Automatminer_rf_ml_model.ipynb`This script will train and evaluate random forest regression models using automatminer Matpipe (Used to compare matbench RF model).
+## ML model
+- `mpids.csv` File contains list of material project ids and corresponding compositions
+- `featurizer` This python module is used to featurize lobster lightweight jsons to use ICOHP data as features for ML model
+- `Featurize_lobsterpy_jsons.ipynb` This script will generate lobster  features via featurizer module save it as using the featurizer module `lobsterpy_featurized_data.csv`
+- `ML_data_with_automatminer.ipynb` This script uses automatminer featurizer to extract matminer features based on composition and structure and creates data ready to be used for ML model training (also adds lobter summary stats data as features)- `dataforml_automatminer.pkl`
+- `ml_utilities.py` This module contains utility functions used for training and evaluating random forest (RF) regressor models. 
+- `RF_model.ipynb` This script will train and evaluate 2 RF regressor models using nested CV approach. (Including and exclusing LOBSTER features)
+- `Automatminer_rf_ml_model.ipynb` This script will train and evaluate RF regression models using automatminer Matpipe (Used to compare matbench RF model).
 - `exc_icohp` This directory containts model cross validation evaluation result plot and feature importance plots
 - `exc_icohp/summary_stats.csv` This file containts summarized stats of model trained and evaluated using `RF_model.ipynb` script. (Excluding LOBSTER features)
 - `inc_icohp` This directory containts model cross validation evaluation result plot and feature importance plots
 - `inc_icohp/summary_stats.csv` This file containts summarized stats of model trained and evaluated using `RF_model.ipynb` script. (Including LOBSTER features)
+- `Plot_summary_results.ipynb` This scripts reads the `summary_stats.csv` of the RF model and visualizes data from Table 4. 
 
