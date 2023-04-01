@@ -11,7 +11,7 @@ The following version numbers are used for the workflows:
 pymatgen, fireworks, and atomate.
 
 ## Analyzing the results & data generation
-- [LobsterPy 0.2.5](https://github.com/JaGeo/LobsterPy)
+- [LobsterPy 0.2.9](https://pypi.org/project/lobsterpy/0.2.9/)
 - [atomate2 0.0.10](https://pypi.org/project/atomate2/0.0.10/)
 - [dash 2.8.1](https://pypi.org/project/dash/2.8.1/)
 - [seaborn 0.12.2](https://pypi.org/project/seaborn/0.12.2/)
