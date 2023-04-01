@@ -46,13 +46,6 @@ You can then use the scripts therein to reproduce our technical validation secti
 - `Charge_comp_data.pkl` contains saved to charge comparison 
 - `Coordination_comparisons_BVA.ipynb` will produce the results of coordination environments comparisons 
 - `Coordination_comp_data_bva.pkl` contains saved to coordination environments comparisons
-- ##### Bader comparisons scripts (optional)
-  - `Retreive_bader_charges_aflowlib.ipynb` will get Bader charge data from AFLOW database by using structure matcher from pymatgen
-  - `bader_charges.pkl` consists of retrieved Bader charge data (load this to directly start with comparisons) 
-  - `Bader_Charge_comparisons.ipynb` will compare Bader charges with Mulliken and Löwdin charges (cation-anion classification only)
-  - `Charge_comp_data_bader.pkl` results of Bader charge comparison data
-  - `Coordination_comparisons_bader.ipynb` will compare coordination environments from simplest Chemenv strategy using Bader charges as valences to LOBSTER environments based on ICOHP
-  - `Coordination_comp_data_bader.pkl` contains results of coordination environment comparisons using Bader charges as valences
 
 ### Data overview
 - `Data_topology.ipynb` this script will extract and store the data necessary for Fig 5.
