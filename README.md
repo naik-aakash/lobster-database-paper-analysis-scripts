@@ -1,4 +1,6 @@
-This repository consists of analysis scripts to reproduce the publication on LOBSTER database 
+This repository consists of analysis scripts to reproduce the publication on LOBSTER database
+
+[![DOI](https://zenodo.org/badge/606380090.svg)](https://zenodo.org/badge/latestdoi/606380090)
 
 ## Workflow initialization
 
