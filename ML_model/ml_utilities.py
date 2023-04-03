@@ -20,6 +20,9 @@ shap.initjs()
 
 logging.basicConfig(level=logging.INFO, format="%(message)s")
 
+logging.info("Caution : Please change the number of parallel processes to run (n_jobs) in the ml_utilities.py module as per your system configuration. Default value is set to 30.")
+
+n_jobs=30 #change the number of processes here
 
 def grid_search(model, param, X_train, y_train):
     """
@@ -43,7 +46,7 @@ def grid_search(model, param, X_train, y_train):
         cv=cv_inner,
         refit=True,
         return_train_score=True,
-        n_jobs=30,
+        n_jobs=n_jobs,
     )
     # execute search
     result = search.fit(X_train, y_train)
