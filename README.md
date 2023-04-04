@@ -14,7 +14,7 @@ pymatgen, fireworks, and atomate.
 
 ## Analyzing the results & data generation
 - [LobsterPy 0.2.9](https://pypi.org/project/lobsterpy/0.2.9/)
-- [atomate2](https://github.com/materialsproject/atomate2)- Install it using `pip install git+https://github.com/materialsproject/atomate2`
+- [atomate2](https://github.com/materialsproject/atomate2/tree/de92307b0d3b3bfcb5d66d3073372b7ef01775de)- Install it using `pip install git+https://github.com/materialsproject/atomate2`
 - [dash 2.8.1](https://pypi.org/project/dash/2.8.1/)
 - [seaborn 0.12.2](https://pypi.org/project/seaborn/0.12.2/)
 - [plotly 5.10.0](https://pypi.org/project/plotly/5.10.0/)
