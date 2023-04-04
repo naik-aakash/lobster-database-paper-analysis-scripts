@@ -14,7 +14,7 @@ pymatgen, fireworks, and atomate.
 
 ## Analyzing the results & data generation
 - [LobsterPy 0.2.9](https://pypi.org/project/lobsterpy/0.2.9/)
-- [atomate2 0.0.10](https://pypi.org/project/atomate2/0.0.10/)
+- [atomate2](https://github.com/materialsproject/atomate2)- Please install it directly from git repo via `pip install git+https://github.com/materialsproject/atomate2`
 - [dash 2.8.1](https://pypi.org/project/dash/2.8.1/)
 - [seaborn 0.12.2](https://pypi.org/project/seaborn/0.12.2/)
 - [plotly 5.10.0](https://pypi.org/project/plotly/5.10.0/)
@@ -28,9 +28,6 @@ pymatgen, fireworks, and atomate.
 - The `Computational_data_jsons` Directory contains two sample files generated using `Computational_data_generation.ipynb`.
 
 ### Technical validation
-You need to download the data from www.xxx.com first.
-At the moment you can find get the data here: `/hpc-user/AG-JGeorge/anaik/Phonon_dataset_LSO/`
-
 
 You can then use the scripts therein to reproduce our technical validation section results.
 ### Charge spilling
@@ -43,7 +40,7 @@ You can then use the scripts therein to reproduce our technical validation secti
 - `lsolobdos.pkl` and `lobdos.pkl` consists of all the data necessary to reproduce the plots (as shown in Fig 4, SI Fig S1, S2, S3) 
 - `Save_pdos_plot_and_data.ipynb` will save the PDOS comparison plots.
 - ##### Interactive visualization of PDOS benchmark plots 
-  1. Navigate to `/hpc-user/AG-JGeorge/anaik/Phonon_dataset_LSO/LSODOS_plots/` 
+  1. Download the dash app and its data from  [10.5281/zenodo.7795903](https://zenodo.org/record/7795903#.ZCv1yXvP1PY)
   2. Run the `Band_features.py` script to get dash app to explore all the s, p, d band feature plots (Checkout -h options)
   3. Run the `Check_fingerprints.py` script to get dash app to visualize all the s, p, d fingerprint plots (Checkout -h options)
 
@@ -58,8 +55,9 @@ You can then use the scripts therein to reproduce our technical validation secti
 - `Lobster_dataoverview.pkl` contains presaved data ready to be used for generating Fig 5.
 
 ### Read data records
-- `/hpc-user/AG-JGeorge/anaik/Phonon_dataset_LSO/Lobsterpy_json/` -- path to summarized bonding data files
-- `/hpc-user/AG-JGeorge/anaik/Phonon_dataset_LSO/Json_data/` -- path to LobsterSchema data files
+- `Example_data/Lightweight_jsons/` -- path to sample LOBSTER Lightweight JSONS files
+- `Example_data/Computational_data_jsons/` -- path to sample Computational JSON files
+-  More data (700 Computational data + 1520 LOBSTER Lightweight JSONS) is available here for download here :- [10.5281/zenodo.7794812](https://zenodo.org/record/7794812#.ZCv2xXvP1PY) 
 - `Read_lobsterpy_data.ipynb` This script will read LobsterPy summarized bonding information JSON files as python dictionary (refer Table 1 of the manuscript for the description). 
 - `Read_lobsterschema_data.ipynb` This script will read LobsterSchema data as pymatgen objects and consists of all the relevant LOBSTER computation data in the form of python dictionary (refer Table 2 of the manuscript for the description).
 
