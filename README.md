@@ -18,6 +18,7 @@ pymatgen, fireworks, and atomate.
 - [dash 2.8.1](https://pypi.org/project/dash/2.8.1/)
 - [seaborn 0.12.2](https://pypi.org/project/seaborn/0.12.2/)
 - [plotly 5.10.0](https://pypi.org/project/plotly/5.10.0/)
+- [pymatviz 0.5.1](https://pypi.org/project/pymatviz/0.5.1/)
 
 ### Data generation
 - The `Lobster_lightweight_json_generation.ipynb` script will generate light weight lobster jsons that consists of lobsterpy summarzied bonding information, relevant strongest bonds, madelung energies of the structures and atomic charges (refer Table 1 and 2 of the manuscript for the description). 
