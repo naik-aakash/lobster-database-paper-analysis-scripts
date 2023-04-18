@@ -58,7 +58,9 @@ You can then use the scripts therein to reproduce our technical validation secti
 ### Read data records
 - `Example_data/Lightweight_jsons/` -- path to sample LOBSTER Lightweight JSONS files
 - `Example_data/Computational_data_jsons/` -- path to sample Computational JSON files
--  More data (700 Computational data + 1520 LOBSTER Lightweight JSONS) is available here for download here :- [10.5281/zenodo.7794812](https://zenodo.org/record/7794812#.ZCv2xXvP1PY) 
+- More data (1520 LOBSTER Lightweight JSONS / Computational data JSONS) is available here for download here :- 
+  - [10.5281/zenodo.7794812](https://doi.org/10.5281/zenodo.7794812) 
+  - [10.5281/zenodo.7821728](https://doi.org/10.5281/zenodo.7821728)
 - `Read_lobsterpy_data.ipynb` This script will read LobsterPy summarized bonding information JSON files as python dictionary (refer Table 1 of the manuscript for the description). 
 - `Read_lobsterschema_data.ipynb` This script will read LobsterSchema data as pymatgen objects and consists of all the relevant LOBSTER computation data in the form of python dictionary (refer Table 2 of the manuscript for the description).
 
