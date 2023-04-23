@@ -36,7 +36,12 @@ pymatgen, fireworks, and atomate.
 - [pymatviz 0.5.1](https://pypi.org/project/pymatviz/0.5.1/)
 
   ### Technical validation
-  - Download all the computational data files from following repository :
+  - Download all the computational data files from following repository links:
+    - [Part 1](https://doi.org/10.5281/zenodo.7852083), [Part 2](https://doi.org/10.5281/zenodo.7852108), [Part 3](https://doi.org/10.5281/zenodo.7852792), [Part 4](https://doi.org/10.5281/zenodo.7852799), [Part 5](https://doi.org/10.5281/zenodo.7852807), [Part 6](https://doi.org/10.5281/zenodo.7852809), [Part 7](https://doi.org/10.5281/zenodo.7852821), [Part 8](https://doi.org/10.5281/zenodo.7852824)
+    - Make a directory named `Results` to extract all the tar files.
+    - For example , extract `Part1.tar file`, using following command `tar -xf Part1.tar -C ./Results/`
+    - Repeat the command above to extract all the 8 tar files to `Results` directory.
+    - This should result in 1520 directories inside `Results`. Each sub directory will be named as `mp-xxx` and it denotes the Materials Project ID of the compound.
   - You can then use the scripts provided to reproduce our technical validation section results.
   
   ### Charge spilling
