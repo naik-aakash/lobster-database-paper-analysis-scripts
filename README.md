@@ -48,6 +48,11 @@ pymatgen, fireworks, and atomate.
 
   - `Charge_spilling_lobster.ipynb` will produce the dataframe with charge spillings for entire dataset and also create the histograms (as in the manuscript). 
   - `Charge_spilling_data.pkl` consists of presaved data from `Charge_spilling_lobster.ipynb` script run (load this to get plots on the go).
+  
+  ### Band overlaps
+
+  - `Band_overlaps.ipynb` will produce the dataframe with devaitons from `bandOverlaps.lobster` for entire dataset. 
+  - `Band_overlaps_data.pkl` consists of presaved data from `Band_overlaps.ipynb` script run (load this to get results on the go).
 
   ### DOS comparisons
   - `Get_plots_band_features_tanimoto.ipynb` will produce all the PDOS benchmarking data, save pandas dataframes as pickle and also save the all the plots
@@ -56,7 +61,7 @@ pymatgen, fireworks, and atomate.
   - ##### Interactive visualization of PDOS benchmark plots 
     1. Download the dash app and its data from  [10.5281/zenodo.7795903](https://zenodo.org/record/7795903#.ZCv1yXvP1PY)
     2. Run the `Band_features.py` script to get dash app to explore all the s, p, d band feature plots (Checkout -h options)
-    3. Run the `Check_fingerprints.py` script to get dash app to visualize all the s, p, d fingerprint plots (Checkout -h options)
+    3. Run the `Check_fingerprints.py` script to get dash app to visualize all the s, p, d fingerprint plots (Checkout -h options)s
 
   ### Charge and coordination comp
   - `BVA_Charge_comparisons.ipynb` will produce the results of charge comparison analysis and also corresponding plots (as shown in SI, Fig S4,S5)
