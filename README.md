@@ -5,7 +5,7 @@ This repository consists of analysis scripts to reproduce the publication on LOB
 ## Workflow initialization
 
 The following version numbers are used for the workflows:
-- [pymatgen 2022.11.7](https://pypi.org/project/pymatgen/2022.11.7/)
+- [pymatgen 2023.6.23](https://pypi.org/project/pymatgen/2023.6.23/)
 - [atomate 1.0.3](https://pypi.org/project/atomate/1.0.3/)
 - [custodian 2023.3.10](https://pypi.org/project/custodian/2023.3.10/)
 
