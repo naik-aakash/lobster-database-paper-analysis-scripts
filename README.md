@@ -74,17 +74,19 @@ pymatgen, fireworks, and atomate.
   - `Lobster_dataoverview.pkl` contains presaved data ready to be used for generating Fig 5.
 
   ## ML model
-  - Use the `ML_model/requirements.txt` to create conda environment with necessary packages
-  - `mpids.csv` File contains list of material project ids and corresponding compositions
-  - `featurizer` This python module is used to featurize lobster lightweight jsons to use ICOHP data as features for ML model
-  - `Featurize_lobsterpy_jsons.ipynb` This script will generate lobster  features via featurizer module save it as using the featurizer module `lobsterpy_featurized_data.csv`
-  - `ML_data_with_automatminer.ipynb` This script uses automatminer featurizer to extract matminer features based on composition and structure and creates data ready to be used for ML model training (also adds lobter summary stats data as features)- `dataforml_automatminer.pkl`
-  - `ml_utilities.py` This module contains utility functions used for training and evaluating random forest (RF) regressor models. 
-  - `RF_model.ipynb` This script will train and evaluate 2 RF regressor models using nested CV approach. (Including and exclusing LOBSTER features)
-  - `Automatminer_rf_ml_model.ipynb` This script will train and evaluate RF regression models using automatminer Matpipe (Used to compare matbench RF model).
-  - `exc_icohp` This directory containts model cross validation evaluation result plot and feature importance plots
-  - `exc_icohp/summary_stats.csv` This file containts summarized stats of model trained and evaluated using `RF_model.ipynb` script. (Excluding LOBSTER features)
-  - `inc_icohp` This directory containts model cross validation evaluation result plot and feature importance plots
-  - `inc_icohp/summary_stats.csv` This file containts summarized stats of model trained and evaluated using `RF_model.ipynb` script. (Including LOBSTER features)
-  - `Plot_summary_results.ipynb` This scripts reads the `summary_stats.csv` of the RF model and visualizes data from Table 4. 
+    -  Create conda environment with python 3.8 use `conda create -n ML_model python==3.8`
+    - Activate the newly created `ML_model` environment and install matbench v0.6 using `pip install matbench==0.6` (Need to do this to deal with automatminer package dependencies conflicts)
+    - Then use the `ML_model/requirements.txt` to install all the necessary packages
+    - `mpids.csv` File contains list of material project ids and corresponding compositions
+    - `featurizer` This python module is used to featurize lobster lightweight jsons to use ICOHP data as features for ML model
+    - `Featurize_lobsterpy_jsons.ipynb` This script will generate lobster  features via featurizer module save it as using the featurizer module `lobsterpy_featurized_data.csv`
+    - `ML_data_with_automatminer.ipynb` This script uses automatminer featurizer to extract matminer features based on composition and structure and creates data ready to be used for ML model training (also adds lobter summary stats data as features)- `dataforml_automatminer.pkl`
+    - `ml_utilities.py` This module contains utility functions used for training and evaluating random forest (RF) regressor models. 
+    - `RF_model.ipynb` This script will train and evaluate 2 RF regressor models using nested CV approach. (Including and exclusing LOBSTER features)
+    - `Automatminer_rf_ml_model.ipynb` This script will train and evaluate RF regression models using automatminer Matpipe (Used to compare matbench RF model).
+    - `exc_icohp` This directory containts model cross validation evaluation result plot and feature importance plots
+    - `exc_icohp/summary_stats.csv` This file containts summarized stats of model trained and evaluated using `RF_model.ipynb` script. (Excluding LOBSTER features)
+    - `inc_icohp` This directory containts model cross validation evaluation result plot and feature importance plots
+    - `inc_icohp/summary_stats.csv` This file containts summarized stats of model trained and evaluated using `RF_model.ipynb` script. (Including LOBSTER features)
+    - `Plot_summary_results.ipynb` This scripts reads the `summary_stats.csv` of the RF model and visualizes data from Table 4. 
 
