@@ -5,7 +5,7 @@ argon2-cffi==21.3.0
 argon2-cffi-bindings==21.2.0
 arrow==1.2.3
 asttokens==2.2.1
-git+https://github.com/naik-aakash/atomate2.git@61298f55f6bdfebcf9932573a1ff953d60897fd0
+git+https://github.com/materialsproject/atomate2/tree/fa603e3cb4c3024b9b12b0d752793a9191d99f8a
 Babel==2.12.1
 backcall==0.2.0
 bcrypt==4.0.1
