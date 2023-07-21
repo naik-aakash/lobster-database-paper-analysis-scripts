@@ -57,7 +57,7 @@ pymatgen, fireworks, and atomate.
 
   ### DOS comparisons
   - `Get_plots_band_features_tanimoto.ipynb` will produce all the PDOS benchmarking data, save pandas dataframes as pickle and also save the all the plots
-  - `lsolobdos.pkl` and `lobdos.pkl` consists of all the data necessary to reproduce the plots (as shown in Fig 4, SI Fig S1, S2, S3) 
+  - `lsolobdos.pkl` and `lobdos.pkl` consists of all the data necessary to reproduce the plots (as shown in Fig 4, 5, 6, 7) 
   - `Save_pdos_plot_and_data.ipynb` will save the PDOS comparison plots.
   - ##### Interactive visualization of PDOS benchmark plots 
     1. Download the dash app and its data from  [10.5281/zenodo.7795903](https://zenodo.org/record/7795903#.ZCv1yXvP1PY)
@@ -65,14 +65,14 @@ pymatgen, fireworks, and atomate.
     3. Run the `Check_fingerprints.py` script to get dash app to visualize all the s, p, d fingerprint plots (Checkout -h options)s
 
   ### Charge and coordination comp
-  - `BVA_Charge_comparisons.ipynb` will produce the results of charge comparison analysis and also corresponding plots (as shown in SI, Fig S4,S5)
+  - `BVA_Charge_comparisons.ipynb` will produce the results of charge comparison analysis and also corresponding plots (as shown in Fig 8, 9)
   - `Charge_comp_data.pkl` contains saved to charge comparison 
   - `Coordination_comparisons_BVA.ipynb` will produce the results of coordination environments comparisons 
   - `Coordination_comp_data_bva.pkl` contains saved to coordination environments comparisons
 
   ### Data overview
-  - `Data_topology.ipynb` this script will extract and store the data necessary for Fig 5.
-  - `Lobster_dataoverview.pkl` contains presaved data ready to be used for generating Fig 5.
+  - `Data_topology.ipynb` this script will extract and store the data necessary for Fig 10.
+  - `Lobster_dataoverview.pkl` contains presaved data ready to be used for generating Fig 10.
 
   ## ML model
     -  Create conda environment with python 3.8 use `conda create -n ML_model python==3.8`
@@ -89,5 +89,5 @@ pymatgen, fireworks, and atomate.
     - `exc_icohp/summary_stats.csv` This file containts summarized stats of model trained and evaluated using `RF_model.ipynb` script. (Excluding LOBSTER features)
     - `inc_icohp` This directory containts model cross validation evaluation result plot and feature importance plots
     - `inc_icohp/summary_stats.csv` This file containts summarized stats of model trained and evaluated using `RF_model.ipynb` script. (Including LOBSTER features)
-    - `Plot_summary_results.ipynb` This scripts reads the `summary_stats.csv` of the RF model and visualizes data from Table 4. 
+    - `Plot_summary_results.ipynb` This scripts reads the `summary_stats.csv` of the RF model and visualizes data from Table 7. 
 
