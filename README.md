@@ -5,7 +5,7 @@ This repository consists of analysis scripts to reproduce the publication on LOB
 ## Workflow initialization
 
 The following version numbers are used for the workflows:
-- [pymatgen 2023.6.23](https://pypi.org/project/pymatgen/2023.6.23/)
+- [pymatgen 2022.11.7](https://pypi.org/project/pymatgen/2022.11.7/)
 - [atomate 1.0.3](https://pypi.org/project/atomate/1.0.3/)
 - [custodian 2023.3.10](https://pypi.org/project/custodian/2023.3.10/)
 
@@ -34,6 +34,7 @@ pymatgen, fireworks, and atomate.
 - [seaborn 0.12.2](https://pypi.org/project/seaborn/0.12.2/)
 - [plotly 5.10.0](https://pypi.org/project/plotly/5.10.0/)
 - [pymatviz 0.5.1](https://pypi.org/project/pymatviz/0.5.1/)
+- [pymatgen 2023.6.23](https://pypi.org/project/pymatgen/2023.6.23/)
 
   ### Technical validation
   - Download all the computational data files from following repository links:
